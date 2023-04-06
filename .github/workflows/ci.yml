@@ -40,21 +40,19 @@
 
 name: Build and Deploy
 on: [push]
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
-     strategy:
-      matrix:
-        node-version: [16.x]
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-        
-      - name: Use Node.js ${{ matrix.node-version }} # 步骤2
-        uses: actions/setup-node@v1 # 作用：安装nodejs
+     - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }} # 版本
+          node-version: 16  
+          
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
@@ -62,8 +60,6 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: docs/.vuepress/dist # The folder the action should deploy.
-          token: ${{ secrets.ACCESS_TOKEN }}
+          folder: build # The folder the action should deploy.   
