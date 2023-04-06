@@ -17,13 +17,14 @@ if [ -z "$VDOING" ]; then
 else
   msg='来自 github actions的自动部署'
   githubUrl=https://pasregret:${VDOING}@github.com/pasregret/vdoingBlog.git
+  git config --global init.defaultBranch master
   git config --global user.name "dingxindong"
   git config --global user.email "dingxindong2013@163.com"
 fi
 git init
 git add -A
 git commit -m "${msg}"
-git push -f $githubUrl master:gh-pages # 推送到github
+git push -f $githubUrl master # 推送到github
 #git push -f git@github.com:miluluyo/vdoingBlog.git master:gh-pages
 
 
