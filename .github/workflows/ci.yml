@@ -39,7 +39,7 @@
 #       #     BUILD_SCRIPT: npm install && npm run build  && cd docs/.vuepress/dist && echo 'pasregret.com' > CNAME && cd - # 部署前要执行的命令（记得cd进入某个目录后，后面要cd -退回开始的目录）
 
 name: Build and Deploy
-on: [push]
+# on: [push]
 # 在master分支发生push事件时触发。
 on: 
   push:
