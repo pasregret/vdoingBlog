@@ -19,11 +19,11 @@ module.exports = [
     ]
   },
   {
-    text: '页面', 
+    text: '后端', 
     link: '/ui/',
     items: [
-      {text: 'HTML', link: '/pages/8309a5b876fc95e3/'},
-      {text: 'CSS', link: '/pages/0a83b083bdf257cb/'},
+      {text: 'Java', link: '/pages/7fae73/'},
+      {text: 'Spring', link: '/pages/fa6492/'},
     ]
   },
   {
