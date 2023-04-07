@@ -74,6 +74,7 @@ export default {
       font-size 1.4rem
       display: block
       margin-bottom 6px
+      text-align: center
     .slogan
       color var(--textColor)
 </style>

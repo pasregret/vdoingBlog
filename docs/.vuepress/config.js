@@ -62,7 +62,7 @@ module.exports = {
     blogger:{ // 博主信息，显示在首页侧边栏
       avatar: '/vdoingBlog/img/tx.jpg',
       name: '時念',
-      slogan: '后端小菜鸡(✪ω✪)'
+      slogan: '一个有梦想的后端小菜鸡(✪ω✪)'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -80,13 +80,13 @@ module.exports = {
         {
           iconClass: 'icon-erji',
           title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=3137169236'
+          link: 'https://music.163.com/#/playlist?id=2507037283'
         }
       ]
     },
     footer:{ // 页脚信息
       createYear: 2019, // 博客创建年份
-      copyrightInfo: '時念 | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      copyrightInfo: '時念 | <a href="https://github.com/pasregret/vdoingBlog/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     },
     htmlModules
   },
