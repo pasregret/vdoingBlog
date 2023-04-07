@@ -22,17 +22,21 @@ module.exports = [
     text: '后端', 
     link: '/ui/',
     items: [
-      {text: 'Java', link: '/pages/7fae73/'},
-      {text: 'Spring', link: '/pages/fa6492/'},
+      {text: '后端笔记', items: [
+        {text: 'Java', link: '/pages/7fae73/'},
+        {text: 'Spring', link: '/pages/fa6492/'}
+      ]},
+      {text: '工作问题', items:[
+        {text: '问题记录', link: '/pages/79637f/'}
+      ]}
     ]
   },
   {
     text: '技术',
     link: '/technology/',
     items: [
-      {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
+      {text: '各类工具使用', link: '/pages/9a7ee40fc232253e/'},
       {text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'},
-      {text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'},
       {text: '博客搭建', link: '/pages/41f87d890d0a02af/'},
     ]
   },
@@ -41,14 +45,11 @@ module.exports = [
     link: '/interview/',
     items: [
       {text: '面试题库', items: [
-        {text: 'HTML', link: '/pages/58734d/'},
-        {text: 'CSS', link: '/pages/26864d/'},
-        {text: 'jQuery', link: '/pages/ceea45/'},
-        {text: 'Vue', link: '/pages/4547e6/'},
         {text: '零碎', link: '/pages/a134b2/'}
       ]}
       ,
       {text: '面试心得', items: [
+        {text: '面试集锦', link: '/pages/aea6571b7a8bae86/'},
         {text: '杂言碎语', link: '/pages/331dbf/'},
       ]}
     ]
@@ -76,7 +77,6 @@ module.exports = [
     link: '/more/',
     items: [
       {text: '学习', link: '/pages/f2a556/'},
-      {text: '面试', link: '/pages/aea6571b7a8bae86/'},
       {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
       {text: '友情链接', link: '/friends/'},
     ]
