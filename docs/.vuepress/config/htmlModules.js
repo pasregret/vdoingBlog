@@ -30,7 +30,7 @@
       ">小编微信号</p>
       <img src="https://raw.githubusercontent.com/pasregret/photo_gallery/master/20230407192050.png"  style="width:100%;" />
       <p>
-      海内存知己，交个朋友行不行~
+      同是天涯沦落人，交个朋友行不行~
       </p>
       </div>`,
     // `<!-- 纵向自适应 -->

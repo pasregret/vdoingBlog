@@ -7,7 +7,7 @@ module.exports = {
   description: '在努力一点，成为更优秀的人', // 描述,以 <meta> 标签渲染到页面html中
   base: base, // '/<github仓库名>/'， 默认'/' 
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/milu.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/csdn.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '全栈博客,个人技术博客,前端,后端开发,后端框架,技术文档,学习,面试,git,github,markdown'}],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
     ['meta', { name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
@@ -23,7 +23,7 @@ module.exports = {
   themeConfig: { // 主题配置
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/milu.png', // 导航栏logo
+    logo: '/img/csdn.png', // 导航栏logo
     repo: 'pasregret/vdoingBlog', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
