@@ -69,4 +69,4 @@ jobs:
         with:
           folder: docs/.vuepress/dist # The folder the action should deploy.  
           branch: gh-pages 
-          token: ${{ secrets.ACCESS_TOKEN }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
