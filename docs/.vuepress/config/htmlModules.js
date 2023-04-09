@@ -27,8 +27,8 @@
         font-size: 20px;
         font-weight: bold;
         margin: 0 0 8px 0;
-      ">小编微信号</p>
-      <img src="https://raw.githubusercontent.com/pasregret/photo_gallery/master/20230407192050.png"  style="width:100%;" />
+      ">小编微信</p>
+      <img src="https://raw.githubusercontent.com/pasregret/photo_gallery/master/wx_lx.jpeg"  style="width:100%;" />
       <p>
       同是天涯沦落人，交个朋友行不行~
       </p>

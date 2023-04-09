@@ -3,6 +3,7 @@ const htmlModules = require('./config/htmlModules.js');
 const base = require('./config/base.js');
 
 module.exports = {
+  // 可在logo后面设置展示 {{ $siteTitle }} 搜索 can-hide
   title: "時念",
   description: '在努力一点，成为更优秀的人', // 描述,以 <meta> 标签渲染到页面html中
   base: base, // '/<github仓库名>/'， 默认'/' 
@@ -11,6 +12,7 @@ module.exports = {
     ['meta', { name: 'keywords', content: '全栈博客,个人技术博客,前端,后端开发,后端框架,技术文档,学习,面试,git,github,markdown'}],
     ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
     ['meta', { name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
+    ['link', { rel: 'stylesheet', href: '/icon/iconfont.css' }] // icon 样式
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
   ],
   markdown: {
@@ -32,9 +34,9 @@ module.exports = {
     editLinkText: '编辑',
 
     // 以下配置是Vdoing主题改动和新增的配置
-    // category: false, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
-    // tag: false, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
-    // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
+    // category: true, // 是否打开分类功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含分类字段 2.页面中显示与分类相关的信息和模块 3.自动生成分类页面（在@pages文件夹）。如关闭，则反之。
+    // tag: true, // 是否打开标签功能，默认true。 如打开，会做的事情有：1. 自动生成的frontmatter包含标签字段 2.页面中显示与标签相关的信息和模块 3.自动生成标签页面（在@pages文件夹）。如关闭，则反之。
+    // archive: true, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
      /*bodyBgImg: [
        'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
@@ -65,12 +67,17 @@ module.exports = {
       slogan: '一个有梦想的后端小菜鸡(✪ω✪)'
     },
     social:{ // 社交图标，显示于博主信息栏和页脚栏
-      // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+      // iconfontCssFile: '//at.alicdn.com/t/c/font_4003921_ie7hvunpw2a.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
       icons: [
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'https://msg.cnblogs.com/send/'
+          link: 'https://msg.cnblogs.com/send/pasregret'
+        },
+        {
+          iconClass: 'icon-csdn',
+          title: 'CSDN',
+          link: 'https://blog.csdn.net/qq_17589751?type=blog'
         },
         {
           iconClass: 'icon-github',
