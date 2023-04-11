@@ -45,7 +45,8 @@ module.exports = [
     link: '/interview/',
     items: [
       {text: '面试题库', items: [
-        {text: '零碎', link: '/pages/a134b2/'}
+        {text: '零碎', link: '/pages/a134b2/'},
+        {text: '面试常见题目汇总', link: '/note/mianshi/'}
       ]}
       ,
       {text: '面试心得', items: [
