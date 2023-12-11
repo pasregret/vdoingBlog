@@ -24,7 +24,8 @@ module.exports = [
     items: [
       {text: '后端笔记', items: [
         {text: 'Java', link: '/pages/7fae73/'},
-        {text: 'Spring', link: '/pages/fa6492/'}
+        {text: 'Spring', link: '/pages/fa6492/'},
+        {text: '算法', link: '/pages/37120b/'}
       ]},
       {text: '工作问题', items:[
         {text: '问题记录', link: '/pages/79637f/'}
